@@ -66,5 +66,3 @@ class Estudiante {
   }
 }
 
-// Exportar la clase Estudiante
-export default Estudiante;

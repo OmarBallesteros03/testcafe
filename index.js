@@ -1,5 +1,3 @@
-import Estudiante from "./Estudiante.js";
-
 const estudiantes = [];
 
 document
@@ -52,9 +50,8 @@ document
 
     // Iterar sobre los estudiantes y construir la cadena de texto
     estudiantes.forEach((estudiante, i) => {
-      listadoTexto += `${
-        i + 1
-      } ${estudiante.getNombre()} ${estudiante.getNumCuenta()}<br>`;
+      listadoTexto += `${i + 1
+        } ${estudiante.getNombre()} ${estudiante.getNumCuenta()}<br>`;
     });
 
     // Actualizar el contenido del elemento HTML con el listado de estudiantes
@@ -75,7 +72,7 @@ function validarDatos(
   // Verificar si los datos cumplen con los requisitos
   const esNombreValido = nombreRegex.test(nombres);
   const esNumeroCuentaValido = cuentaRegex.test(numeroCuenta);
- // const esContraseña = gradoGrupoRegex.test(contraseña);
+  // const esContraseña = gradoGrupoRegex.test(contraseña);
 
   // Devolver true si todos los campos son válidos, false en caso contrario
   return (
